@@ -1,26 +1,107 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>PEC 1 - Herramientas HTML y CSS II</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <header class="p-3 bg-dark text-white">
+      <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-white">El Teide</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Tenerife</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Turismo</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Sobre nosotros</a></li>
+          </ul>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+          </form>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Iniciar Sesión</button>
+            <button type="button" class="btn btn-warning">Registrarse</button>
+          </div>
+        </div>
+      </div>
+    </header>  
+    <main>
+      <div class="container-fluid pl-none pr-none">
+        <img class="img-header" src="/src/assets/images/curiosidades-teide.jpg" alt="Universitat Oberta de Catalunya" >
+      </div>
+      <div class="b-example-divider"></div>
+      <div class="container-fluid">
+        <section class="py-5 text-center container-fluid">
+          <div class="row py-lg-5">
+            <div class="col-lg-10 col-md-8 mx-auto mt-20">
+              <p class="fw-light fs-50">¿Qué es el Parque Nacional de El Teide?</p>
+              <p class="lead text-muted fs-30">Isla de Tenerife, Islas Canarias</p>
+              <p class="mt-20">
+                <a href="https://www.webtenerife.com/que-visitar/parque-nacional-del-teide/" class="btn btn-primary my-2">Web Tenerife</a>
+                <a href="https://www.volcanoteide.com/es/parque_nacional" class="btn btn-secondary my-2">Volcano Teide</a>
+              </p>
+            </div>
+          </div>
+        </section>        
+      </div>
+      <div class="b-example-divider"></div>
+      <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/src/assets/images/parador.jpg">
+    
+                <div class="card-body">
+                  <p class="card-text">Una casona de montaña rodeada por un entorno de naturaleza salvaje. Tiene unas vistas inmejorables del pico del volcán, que podrás disfrutar mientras comes e incluso desde alguna de las habitaciones.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/src/assets/images/observatorio.jpg">    
+                <div class="card-body">
+                  <p class="card-text">Mayor observatorio solar del mundo.La latitud en la que se encuentra el archipiélago, la altitud de las islas que supera el mar de nubes y un cielo a esa altura siempre despejado gracias a los vientos alisios.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/src/assets/images/teleferico.jpg">    
+                <div class="card-body">
+                  <p class="card-text">El Teleférico del Teide permite ascender a la cumbre del volcán salvando un gran desnivel que, de hacerse a pie, requeriría mucho tiempo y esfuerzo. Está compuesto por dos estaciones.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

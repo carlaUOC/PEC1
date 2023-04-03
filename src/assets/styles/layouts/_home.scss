@@ -1,4 +1,41 @@
-* {
+.container-fluid-img {
+  height: 200px;
+}
+
+.img-header {
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  opacity: 0.6;
+  height: auto;
+}
+
+.pl-none {
+  padding-left: 0;
+}
+
+.pr-none {
+  padding-right: 0;
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+/** {
   box-sizing: border-box;
 }
 
@@ -7,33 +44,35 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-color: $uoc-bg;
+  background-color: #ffffff;
   color: $uoc-corporate;
 }
-
+/*
 .uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;  
 }
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
 
+.uoc-header {
+  max-width: 100%;
+  height: 600px;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  background-image: url("/src/assets/images/teide.jpg");
+  background-size: cover;
   @media (min-width: $mqMinWidth) {
     max-width: none;
   }
@@ -41,13 +80,17 @@ body {
 
 .uoc-title {
   font-family: $font-family-serif;
-  font-size: 24px;
   font-weight: 700;
   color: $uoc-corporate;
-
+  margin-top: 70px;
+  font-size: 80px;
   @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+    font-size: 120px;
   }
+}
+
+.uoc-body {
+  color: #4b0505;
 }
 
 .uoc-footer {
@@ -55,3 +98,114 @@ body {
   font-size: 0.75rem;
   text-align: center;
 }
+
+.text-center p {
+  font-size: 30px;
+  line-height : 50px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.custom-cards {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.img-actividades {
+  background-size: cover;
+  height: 700px;
+}
+
+.observatorio {
+  background-image: url("/src/assets/images/observatorio.jpg");
+}
+
+.telesferico {
+background-image: url("/src/assets/images/teleferico.jpg");
+}
+
+.parador {
+  background-image: url("/src/assets/images/parador.jpg");
+}
+
+.custom-cards a {
+  color: #ffffff;
+  text-decoration-line: none;
+}
+
+.btn-web {
+  width: 30%;
+  height: 100px;
+  padding: 30px;
+  font-size: 25px;
+}*/
+/*
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.uoc-header {
+  max-width: 100%;
+  min-height: 800px;
+  padding: 2rem;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $mqMinWidth) {
+    max-width: none;
+  }
+}
+
+.album {
+  margin: 10px 100px;
+}
+
+.img-header {
+  //display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  opacity: 0.7;
+}
+
+.h-800 {
+  height: 800px;
+}
+
+.fs-70 {
+  font-size: 70px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.lh-200 {
+  line-height: 200%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}*/
