@@ -7,33 +7,25 @@
     <title>PEC 1 - Herramientas HTML y CSS II</title>
   </head>
   <body>
-    <header class="p-3 bg-dark text-white">
-      <div class="container-fluid">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-white">El Teide</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Tenerife</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Turismo</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Sobre nosotros</a></li>
-          </ul>
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
-          </form>
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">Iniciar Sesión</button>
-            <button type="button" class="btn btn-warning">Registrarse</button>
-          </div>
+    <header class="container-fluid container-fluid-header container-fluid__txt-white">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white">El Teide</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Tenerife</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Turismo</a></li>
+        </ul>
+        <div class="text-end">
+          <img class="container-fluid__img_size" src="./assets/images/icon_TF.svg" alt="Universitat Oberta de Catalunya" >
         </div>
       </div>
-    </header>  
+    </header>
     <main>
-      <div class="container-fluid pl-none pr-none">
-        <img class="img-header" src="/src/assets/images/curiosidades-teide.jpg" alt="Universitat Oberta de Catalunya" >
+      <div class="container-fluid container-fluid__padding_none">
+        <img class="container-fluid--image" src="/src/assets/images/curiosidades-teide.jpg" alt="Universitat Oberta de Catalunya" >
       </div>
-      <div class="divider"></div>
+      <div class="divider divider-size"></div>
       <div class="container-fluid">
-        <section class="py-5 text-center container-fluid">
+        <section class="container-fluid container-fluid--section container-fluid__txt-white container-fluid__padding_top_bottom_three">
           <div class="row py-lg-5">
             <div class="col-lg-10 col-md-8 mx-auto mt-20">
               <p class="fw-light fs-50">¿Qué es el Parque Nacional de El Teide?</p>
@@ -44,22 +36,20 @@
               </p>
             </div>
           </div>
-        </section>        
+        </section>
       </div>
       <div class="divider"></div>
-      <div class="album py-5 bg-light">
-        <div class="container">
-    
+      <div class="container-fluid container-fluid__bg-light container-fluid__padding_top_bottom_three">
+        <div class="container">  
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/src/assets/images/parador.jpg">
-    
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/src/assets/images/parador.jpg">    
                 <div class="card-body">
                   <p class="card-text">Una casona de montaña rodeada por un entorno de naturaleza salvaje. Tiene unas vistas inmejorables del pico del volcán, que podrás disfrutar mientras comes e incluso desde alguna de las habitaciones.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <a href="https://paradores.es/es/parador-de-las-canadas-del-teide" class="btn btn-sm btn-outline-secondary">Ver</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -73,7 +63,7 @@
                   <p class="card-text">Mayor observatorio solar del mundo.La latitud en la que se encuentra el archipiélago, la altitud de las islas que supera el mar de nubes y un cielo a esa altura siempre despejado gracias a los vientos alisios.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <a href="https://www.iac.es/es/observatorios-de-canarias/observatorio-del-teide" class="btn btn-sm btn-outline-secondary">Ver</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -87,7 +77,7 @@
                   <p class="card-text">El Teleférico del Teide permite ascender a la cumbre del volcán salvando un gran desnivel que, de hacerse a pie, requeriría mucho tiempo y esfuerzo. Está compuesto por dos estaciones.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <a href="https://www.webtenerife.com/que-visitar/parque-nacional-del-teide/teleferico-teide/" class="btn btn-sm btn-outline-secondary">Ver</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -97,7 +87,7 @@
           </div>
         </div>
       </div>
-
+      <div class="divider"></div>
     </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
